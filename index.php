@@ -1,8 +1,6 @@
 <?php
 $dir = "assets/graphics/img_slow/*";
-foreach (glob($dir) as $file) {
-    
-}
+foreach (glob($dir) as $file) {}
 $phpArray = glob($dir);
 ?>
 <!doctype html>
@@ -85,7 +83,6 @@ $phpArray = glob($dir);
             var playButton = document.getElementById('play');
             
             /*   START POSITION FOR FRAMES AND BUTTONS  */
-            
             var item1 = items[0];
             var oneStop = stopBtns[0];
             var x = 0;
@@ -134,7 +131,6 @@ $phpArray = glob($dir);
             });
 
             /* SECOND FRAME   */
-
             var twoRoll = function() {
                 y = Math.floor((Math.random() * len) + 0);
                 s = setTimeout(twoRoll, timeout);
@@ -147,7 +143,6 @@ $phpArray = glob($dir);
             });
 
             /* THIRD FRAME  */
-
             var threeRoll = function() {
                 c = Math.floor((Math.random() * len) + 0);
                 t = setTimeout(threeRoll, timeout);
