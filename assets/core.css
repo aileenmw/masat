@@ -1,0 +1,361 @@
+html{
+    width: 100%;
+}
+body{
+    text-transform: uppercase;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+#global_wrapper{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.flex_wrapper{
+    display: flex;
+}
+.pos_rel{
+    position: relative;
+}
+h3{
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    height: 30px;
+}
+h5{
+    text-align: center;
+    margin-top: 0;
+}
+.blue{
+    color: blue;
+}
+.large{
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.point_wrapper{
+    min-width: 160px; 
+    text-align: center;
+    padding: 5px;
+}
+#points{
+    font-size: 1.5em;
+    background-color: blue;
+    color: #fff; 
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px; 
+    font-weight: 900;
+    /*height: 70px;*/
+}
+.nmb{
+    font-size: 1.5em;
+}
+#bell_active{
+    height: 70px;
+    margin: auto;
+}
+
+@-webkit-keyframes rotation {
+    0%   {  -webkit-transform: rotate(30deg)}
+    25%  {  -webkit-transform: rotate(-30deg)}
+    50%  { -webkit-transform: rotate(30deg)}
+    75%  { -webkit-transform: rotate(-30deg)}
+    100% { -webkit-transform: rotate( 0deg)}
+}
+.bingo{
+    position: relative;
+}
+#kiss{
+    height: 20px;
+}
+.ast{
+    position: absolute;
+    top: 5px;
+    font-size: 14px;
+    color: #000;
+}
+#branch_right{
+    position: fixed;
+    top: 0;
+    right: -30px;
+    width: 25%;
+    z-index:5;
+}
+#branch_left{
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 0;
+    left: -25px;
+    width: 16%;
+    z-index:5;
+}
+.h{
+    text-transform: uppercase;
+    margin:10px  auto;
+    padding-right: 10%;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    font-size: 2.3rem;
+}
+#win{
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    opacity: 0.9;
+    height: 150px;
+}
+#game{
+    margin: 0 auto;
+}
+.flexbox{
+    width: 70%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: space-around;
+}
+.frame{
+    margin-top: 0;
+    position: relative;
+    height: 240px;
+    width: 250px;
+}
+
+.frame img{
+    width: 100%;
+    position: absolute; 
+    bottom: 0;
+}
+.col{
+    display: block;
+    position: relative;
+}
+
+button{
+    width: 200px;
+    padding: 7px;
+    background-color: blue;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    text-transform: uppercase;
+    outline: none;
+    font-weight: 900;
+    color: #fff;
+}
+/* play and stop all */
+.buttons{
+    width: 70%;
+    margin: 0 auto!important;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.buttons button{
+    width: 200px;
+}
+.clicked{
+    background-color: grey;
+    disabled: true;
+}
+#play{
+    background-color: #0ad354;
+}
+#stopAll{
+    background-color: red;
+}
+#lightbox{
+    display: none;
+    width: 70%;
+    background-color: rgba( 0, 0, 0, 1);
+    z-index: 3;
+    position: absolute;
+    top: 20px;
+    right: 10%;
+    text-align: center;
+    padding: 5% 3%;
+    color: #fff;
+}
+#lightbox img{
+    max-width: 50%;   
+    max-height: 70vh;
+}
+#lightbox h3{
+    height: auto;
+}
+#coupon{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    background-image: url('graphics/christmas/sparkle.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   
+}
+#coupon h3{
+    width: 60%;
+    padding: 10%;
+    height: auto;
+    margin: auto;
+    background-color: rgb(255, 234, 7);
+    text-align:center;   
+    box-sizing: border-box;
+    font-size: 22px;
+    font-weight: 900;
+    font-family: sans-serif;   
+    position: relative;
+}
+.close{
+    position: absolute;
+    right: 100px;
+    top: 200px;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: verdana;
+    z-index: 5;
+    border: solid 2px #fff;
+    width: 35px;
+}
+
+.close:hover{
+    color: red;
+    border: solid 2px red
+}
+
+#coupon .close{
+    right: 0px;
+    top: 0px;
+    margin: 5px;
+}
+@media only screen and (max-width : 900px) {
+    body{
+        background-color: red;
+        background-color: lightblue;
+    }
+    #branch_left{
+    bottom: 0;
+    left: -25px;
+    width: 20%;
+    z-index:5;
+}
+    .stop{
+        background-color: #fff;
+        color: #000;
+    }
+    .blue{
+        color: #fff;
+    }
+    button{
+        padding: 5px;
+    }
+    .h{
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 40px;
+    }
+    .h span{
+        line-height: 0;
+    }
+    h5{
+        margin: 0;
+        padding: 0;
+    }
+    #points{
+        background-color: #fff;
+        color: blue;
+        font-size: 18px;
+    }
+    .flexbox{
+        width: 100%;
+        margin: 0;
+    }
+    #bell_active{
+        height:60px
+    }
+    .frame{
+        width: 130px;
+        height: 140px;
+    }
+    .frame img{
+        width:130px;
+    }
+    button{
+        width: 150px!important;
+    }
+    .buttons{
+        margin-top: 10px!important;
+    }
+    #lightbox .close{
+        right:80px;
+        top: 70px;
+    }
+}
+@media only screen and (max-width : 640px) {
+    .flex_wrapper{
+        height: 60px;
+        margin-bottom: 35px;
+    }
+    .point_wrapper{
+        display: flex;
+    }
+    #points{
+        font-size: 14px;
+        height: 50px;
+        box-sizing: border-box;
+    }
+    .h{
+        margin-left:0;
+        margin-right: 50px;
+        line-height: unset;
+    }
+    #bell_active{
+        height: 50px;
+    }
+    .frame, .frame img{
+        height: 85px;
+        width: 100px;
+    }
+    .col{
+        width: 100px;
+    }
+    .buttons{
+        margin-top: 20px!important;
+    }
+    button{
+        padding: 2px!important;
+        width: 100px!important;
+    }
+    .clicked{
+        background-color: rgba(0,0,0,.1);
+        border-radius: 30px;
+    }
+    .stop{
+        background-color: rgba(0,0,0,0);
+    }
+    #lightbox h3{
+        font-size: 16px;
+    }
+
+}
+@media only screen and (max-width : 400px) {
+    #lightbox h3{
+        margin-top: 50px;             
+    }
+    #lightbox .close{
+        top:-5px;
+        right: 15px;
+    }
+    #branch_right{
+        width: 28%;
+           }
+           #branch_left{
+               width: 35%;
+           }
+}
