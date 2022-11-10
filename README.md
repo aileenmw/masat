@@ -1,3 +1,3 @@
 # masat
-One-armed bandit
+One-armed bandit - 
 Just a little game project in vanilla javascript 
